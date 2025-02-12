@@ -1,0 +1,38 @@
+version: "3"
+
+name: t94-dashboard
+
+services:
+  fd_server:
+    build: 
+      context: ./fd_server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./fd_server/.env
+    volumes:
+      - ./fd_server:/app
+      - /app/node_modules
+    networks:
+      - t94-dashboard
+    ports:
+      - "1337:1337"
+
+  fd_client:
+    build: 
+      context: ./fd_client
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./fd_client/.env.local
+    volumes:
+      - ./fd_client:/app
+      - /app/node_modules
+    networks:
+      - t94-dashboard
+    ports:
+      - "5173:5173"
+    depends_on:
+      - fd_server
+  
+networks:
+  t94-dashboard:
+    driver: bridge
