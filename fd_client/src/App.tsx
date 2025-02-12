@@ -5,6 +5,7 @@ import { Box, CssBaseline, ThemeProvider } from "@mui/material"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./scenes/navbar"
 import Dashboard from "./scenes/dashboard"
+import Prediction from "./scenes/prediction"
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/prediction" element={<div>prediction page</div>} />
+              <Route path="/prediction" element={<Prediction />} />
             </Routes>
           </Box>
         </ThemeProvider>
@@ -28,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
