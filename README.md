@@ -16,7 +16,7 @@
 **dotenv**: Loads environment variables from a `.env` file.  
 **express**: Web framework for Node.js.  
 **helmet**: Security middleware for HTTP headers.  
-**mongoose**: MongoDB object modeling tool.
+**mongoose**: MongoDB object modeling tool.  
 **mongoose-currency**: Plugin adds support for currency data types in MongoDB.  
 **morgan**: HTTP request logger middleware.  
 **nodemon**: Utility for automatically restarting the server during development.  
@@ -43,12 +43,12 @@
 **@reduxjs/toolkit**: Toolkit for efficient Redux development.  
 **react-dom**: Entry point for React DOM rendering.  
 **react-redux**: Official React bindings for Redux.  
-**react-router-dom**: DOM bindings for React Router. 
-**recharts**: Charting library
-**regression**: Library for performing regression analysis.
-**@types/react**: TypeScript definitions for React.
-**@types/react-dom**: TypeScript definitions for React DOM.
-**@types/regression**: TypeScript definitions for the regression library.
+**react-router-dom**: DOM bindings for React Router.  
+**recharts**: Charting library  
+**regression**: Library for performing regression analysis.  
+**@types/react**: TypeScript definitions for React.  
+**@types/react-dom**: TypeScript definitions for React DOM.  
+**@types/regression**: TypeScript definitions for the regression library.  
 **typescript**: TypeScript language and compiler.
 
 # Usage
