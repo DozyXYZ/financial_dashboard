@@ -1,16 +1,24 @@
 # Introduction
+
 `financial_dashboard` is a MERN stack project. I created this project to practice full-stack development, TypeScript, web design, data analytics, regression, and deployment on Docker Desktop.
 
+## Video
+
+[Watch the demo video](https://github.com/user-attachments/assets/387a958d-0a01-4490-b8f7-a18ed688d332)
+
 ## fd_server
+
 `fd_server` is a backend server application built with Node.js and Express. It uses MongoDB as its database and includes various middleware for environment configuration and security. This server is created based on MVC Framework. I learnt to set up Mongo cluster, connection, and data modelling.
 
 ### Structure
+
 - **models/**: Contains Mongoose models that define the schema for the MongoDB collections used in the application.
 - **routes/**: Contains controller functions that handle incoming requests and interact with the models as well as route definitions that map HTTP requests to the appropriate controller functions.
 - **data/**: Contain the mock data of the project
 - **index.js**: The entry point of the server application, setting up the app and connecting to the MongoDB database.
 
 ### Main Dependencies
+
 **body-parser**: Middleware for parsing request bodies.  
 **cors**: Middleware for enabling Cross-Origin Resource Sharing.  
 **dotenv**: Loads environment variables from a `.env` file.  
@@ -19,12 +27,14 @@
 **mongoose**: MongoDB object modeling tool.  
 **mongoose-currency**: Plugin adds support for currency data types in MongoDB.  
 **morgan**: HTTP request logger middleware.  
-**nodemon**: Utility for automatically restarting the server during development.  
+**nodemon**: Utility for automatically restarting the server during development.
 
 ## fd_client
+
 `fd_client` is a Vite React-based application designed for managing and displaying financial dashboard. It utilizes Material UI for styling and layout, Redux for state management, Recharts for data visualization, and Regression for regression analysis. I learnt to layout the page with box and theme color, and design endpoints for different purposes.
 
 ### Structure
+
 - **src/components/**: Contains reusable components for design.
 - **src/scenes/**: Contains configuration for all the project pages.
 - **src/state/**: Contains API configuration, endpoints, hooks in `api.ts`. Contains interface for type in `types.ts`.
@@ -35,11 +45,12 @@
 - **expanded-theme.ts**: Extends the Material UI theme's palette to include custom properties.
 
 ### Main Dependencies
+
 **@emotion/react**: Library for writing CSS styles with JavaScript.  
 **@emotion/styled**: Styled components for Emotion.  
 **@mui/icons-material**: Material Design icons for MUI.  
 **@mui/material**: Material-UI components for React.  
-**@mui/x-data-grid**: Data grid component for MUI.   
+**@mui/x-data-grid**: Data grid component for MUI.  
 **@reduxjs/toolkit**: Toolkit for efficient Redux development.  
 **react-dom**: Entry point for React DOM rendering.  
 **react-redux**: Official React bindings for Redux.  
@@ -52,12 +63,15 @@
 **typescript**: TypeScript language and compiler.
 
 # Usage
+
 ## Prerequisites
+
 - Node.js (version 14 or higher)
 - npm (version 5.6 or higher)
 - MongoDB online cluster
 
 ## Server Preparation
+
 1. Clone the repository:
    ```
    git clone https://github.com/DozyXYZ/financial_dashboard.git
@@ -84,6 +98,7 @@
 8. The database and server is ready.
 
 ## Client Preparation
+
 1. Open a new terminal and navigate to the client folder from the server folder:
    ```
    cd ..
@@ -104,11 +119,13 @@
 5. The app is loaded to the browser after compiling.
 
 # Docker Desktop (Optional)
+
 If you have Docker Desktop, you can deploy the project there.
 
 **Note**: Change the ports in the `fd_server` service in `docker-compose.yml` file to the port you put in fd_server/.env file.
 
 In the root directory of the project, run the command:
-   ```
-   docker-compose -f docker-compose.yml up --build
-   ```
+
+```
+docker-compose -f docker-compose.yml up --build
+```
